@@ -1,0 +1,47 @@
+<table mat-table [dataSource]="data" >
+
+  <ng-container matColumnDef="mission_name" class="colw">
+    <th mat-header-cell *matHeaderCellDef> mission_name </th>
+    <td mat-cell *matCellDef="let data"> {{data.mission_name}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="mission_id">
+    <th mat-header-cell *matHeaderCellDef> mission_id </th>
+    <td mat-cell *matCellDef="let data"> {{data.mission_id}} </td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="manufacturers">
+    <th mat-header-cell *matHeaderCellDef> manufacturers </th>
+    <td mat-cell *matCellDef="let data"> {{data.manufacturers}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="payload_ids">
+    <th mat-header-cell *matHeaderCellDef> payload_ids </th>
+    <td mat-cell *matCellDef="let data"> {{data.payload_ids}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="wikipedia">
+    <th mat-header-cell *matHeaderCellDef> wikipedia </th>
+    <td mat-cell *matCellDef="let data"> {{data.wikipedia}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="website">
+    <th mat-header-cell *matHeaderCellDef> website </th>
+    <td mat-cell *matCellDef="let data"> {{data.website}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="twitter">
+    <th mat-header-cell *matHeaderCellDef> twitter </th>
+    <td mat-cell *matCellDef="let data"> {{data.twitter}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="description">
+    <th mat-header-cell *matHeaderCellDef> description </th>
+    <td mat-cell *matCellDef="let data"> {{data.description}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<marquee> Shuvam Ganguli - 201900302 - B - 47 </marquee>

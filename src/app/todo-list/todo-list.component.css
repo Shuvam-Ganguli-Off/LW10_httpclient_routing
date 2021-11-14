@@ -1,0 +1,28 @@
+p{
+  margin-left: 20px;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.ul{
+  background: olive;
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 360px;
+  border: 2px solid black;
+  list-style-type: none;
+}
+.ul .li{
+  background:rgb(200, 190, 80);
+  border: 2px solid black;
+  margin-left: 20px;
+  margin: 10px;
+}
+.li{
+  color: black;
+}
+.li :hover{
+  background-color: rgb(140,150,150);
+  color: white;
+}
